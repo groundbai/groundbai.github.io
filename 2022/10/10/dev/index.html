@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="laravel mix 工作流npm 包的默认安装路径当选择全局安装时，默认的安装路径为C:\Users\xxx\AppData\Roaming\npm，缓存路径为C:\Users\xxx\AppData\Roaming\npm_cache，可以使用以下命令查看。 123npm root -g或者npm config ls  修改全局包的安装路径12npm config set prefix &amp;q">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/10/10/dev/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="laravel mix 工作流npm 包的默认安装路径当选择全局安装时，默认的安装路径为C:\Users\xxx\AppData\Roaming\npm，缓存路径为C:\Users\xxx\AppData\Roaming\npm_cache，可以使用以下命令查看。 123npm root -g或者npm config ls  修改全局包的安装路径12npm config set prefix &amp;q">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-10-10T05:13:40.205Z">
+<meta property="article:modified_time" content="2022-10-10T05:13:40.293Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-dev" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/10/10/dev/" class="article-date">
+  <time class="dt-published" datetime="2022-10-10T05:13:40.205Z" itemprop="datePublished">2022-10-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="laravel-mix-工作流"><a href="#laravel-mix-工作流" class="headerlink" title="laravel mix 工作流"></a>laravel mix 工作流</h3><h4 id="npm-包的默认安装路径"><a href="#npm-包的默认安装路径" class="headerlink" title="npm 包的默认安装路径"></a>npm 包的默认安装路径</h4><p>当选择全局安装时，默认的安装路径为C:\Users\xxx\AppData\Roaming\npm，缓存路径为C:\Users\xxx\AppData\Roaming\npm_cache，可以使用以下命令查看。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm root -g</span><br><span class="line">或者</span><br><span class="line">npm config ls</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改全局包的安装路径"><a href="#修改全局包的安装路径" class="headerlink" title="修改全局包的安装路径"></a>修改全局包的安装路径</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix &quot;D:\workspace\npm\npm_global&quot;</span><br><span class="line">npm config set cache &quot;D:\workspace\npm\npm_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p>环境变量 &gt; 系统变量 &gt; path &gt; 新建 [把 npm_global 路径放进去]</p>
+<h3 id="解决-cross-env-command-not-found"><a href="#解决-cross-env-command-not-found" class="headerlink" title="解决 cross-env :command not found"></a>解决 cross-env :command not found</h3><p>shell</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get prefix</span><br></pre></td></tr></table></figure>
+
+<p>查看操作系统上的 PATH 环境变量，并添加<code> npm config get prefix</code> 命令输出的路径（如果尚不存在）。如果将命令的输出添加到 PATH 环境变量中，则必须重新启动任何打开的命令提示符才能生效。</p>
+<p>如果这不起作用，请尝试将 bin 文件夹的路径（从 npm config get prefix ）添加到您的 PATH 环境变量并重新启动您的终端。</p>
+<h3 id="npm-run-watch-poll-在win10下跑不通"><a href="#npm-run-watch-poll-在win10下跑不通" class="headerlink" title="npm run watch-poll 在win10下跑不通"></a>npm run watch-poll 在win10下跑不通</h3><p>1.安装完node,下载安装 yarn</p>
+<p>2.使用npm安装 cross-env [直接运行 npm install -g cross-env –save-dev]</p>
+<p>3.使用 [ cross-env SASS_BINARY_SITE&#x3D;npm.taobao.org&#x2F;mirrors&#x2F;node-sass yarn ]</p>
+<p>4.完成以上步骤，可以执行 npm run watch-poll</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/10/10/dev/" data-id="cl92e8igw0001dkuyf20lhdkn" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/10/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/10/10/dev/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
